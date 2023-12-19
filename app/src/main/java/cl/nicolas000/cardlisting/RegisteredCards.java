@@ -51,7 +51,7 @@ public class RegisteredCards extends AppCompatActivity {
     };
 
     private void obtainData() {
-        String url = "http://18.205.16.41/getAllCardData.php";
+        String url = "http://18.205.16.41/getRegisteredCards.php";
 
         JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
